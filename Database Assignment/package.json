@@ -1,0 +1,20 @@
+{
+  "name": "benr2423-vms",
+  "description": "BENR2423 VMS",
+  "version": "1.0.0",
+  "main": "lab7.js",
+  "engines": {
+    "node": "16.x"
+  },
+  "scripts": {
+    "start": "node lab7.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "jest": "^28.1.0",
+    "mongodb": "^4.6.0",
+    "supertest": "^6.2.3"
+  }
+}
