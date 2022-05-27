@@ -5,8 +5,7 @@ class User {
 		users = await conn.db("datass").collection("company");
 	}
 
-	static async register(conn,username, password) {
-		users = await conn.db("datass").collection("company");
+	static async register(username, password) {
 		// TODO: Check if username exists
 		//users.aggregate([{$match : { "username": username }},{$count:"username"}]).toArray().then(res =>{console.log(res);
 		return users.find({username:username}).count().then(res =>{
@@ -34,8 +33,7 @@ class User {
 		
 	}
 
-	static async login(conn,username, password) {
-		users = await conn.db("datass").collection("company");
+	static async login(username, password) {
 		// TODO: Check if username exists
 		var newpassword = password.split("");
 			var hashpass = [];
